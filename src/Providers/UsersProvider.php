@@ -1,10 +1,10 @@
 <?php
 
-namespace SoftwareTours\Lum\Providers;
+namespace SoftwareTours\Users\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class LumProvider extends ServiceProvider
+class UsersProvider extends ServiceProvider
 {
 
     private function _updateRoutes()
