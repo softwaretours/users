@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Software Tours",
+    "last_name": "",
+    "email": "app@software.tours",
+    "password_text": "app",
+    "status": 1,
+    "parent_id": 0
+  },
+  {
+    "id": 2,
+    "name": "Super administrator",
+    "last_name": "",
+    "email": "admin@software.tours",
+    "password_text": "admin",
+    "status": 1,
+    "parent_id": 1
+  },
+  {
+    "id": 3,
+    "name": "Reseller",
+    "last_name": "",
+    "email": "reseller@software.tours",
+    "password_text": "reseller",
+    "status": 1,
+    "parent_id": 1
+  },
+  {
+    "id": 4,
+    "name": "Client",
+    "last_name": "",
+    "email": "client@software.tours",
+    "password_text": "client",
+    "status": 1,
+    "parent_id": 1
+  },
+  {
+    "id": 5,
+    "name": "Client supplier",
+    "last_name": "",
+    "email": "supplier@client.tours",
+    "password_text": "supplier",
+    "status": 1,
+    "parent_id": 4
+  }
+]

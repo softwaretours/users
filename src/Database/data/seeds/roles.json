@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Software Tours",
+    "slug": "st",
+    "description": "Software tours sve privilegije",
+    "level": 100
+  },
+  {
+    "id": 2,
+    "name": "Super administrator",
+    "slug": "super.admin",
+    "description": "Super administrator sve privilegije osim finansiskih izvještaja",
+    "level": 90
+  },
+  {
+    "id": 3,
+    "name": "Reseller",
+    "slug": "reseller",
+    "description": "Reseller | Kreira svoje kliejnte kao Software tours | uvid u svoje finansiske izvještaje",
+    "level": 80
+  },
+  {
+    "id": 4,
+    "name": "Klijent",
+    "slug": "client",
+    "description": "Turistička agencija | Hotel | Cms | E-commerce",
+    "level": 70
+  },
+  {
+    "id": 5,
+    "name": "Zaposleni",
+    "slug": "client.employee",
+    "description": "Zaposleni od klijenta| Isto kao i klijent, nema uvid u finansiske izvještaje",
+    "level": 60
+  },
+  {
+    "id": 6,
+    "name": "Partner",
+    "slug": "partner.employee",
+    "description": "Zaposleni od klijentovog partnera | Isto kao i partner, nema uvid u finansiske izvještaje",
+    "level": 50
+  },
+  {
+    "id": 7,
+    "name": "Dobavljač",
+    "slug": "client.supplier",
+    "description": "Ažurira svoje produckte i pregleda koliku zaradu ima preko kliejnta",
+    "level": 40
+  },
+  {
+    "id": 8,
+    "name": "Affiliate",
+    "slug": "client.affiliate",
+    "description": "Affiliate | Pregleda koliko je prodaje došlo preko njegovog računa i kolika mu je zarada",
+    "level": 30
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "name": "softwaretours/lum",
+  "description": "Laravel User management with roles and permisions.",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "SoftwareTours\\Lum\\": "src/"
+    }
+  }
+}

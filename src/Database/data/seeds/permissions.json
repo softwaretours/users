@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Create users",
+    "slug": "users.create",
+    "description": "Create users",
+    "permission_group_id": 1
+  },
+  {
+    "id": 2,
+    "name": "View users",
+    "slug": "users.index",
+    "description": "View users",
+    "permission_group_id": 1
+  },
+  {
+    "id": 3,
+    "name": "Update users",
+    "slug": "users.edit",
+    "description": "Update users",
+    "permission_group_id": 1
+  },
+  {
+    "id": 4,
+    "name": "Delete users",
+    "slug": "users.destroy",
+    "description": "Delete users",
+    "permission_group_id": 1
+  },
+  {
+    "id": 5,
+    "name": "Create module types",
+    "slug": "moduletypes.create",
+    "description": "Create module types",
+    "permission_group_id": 2
+  },
+  {
+    "id": 6,
+    "name": "View module types",
+    "slug": "moduletypes.index",
+    "description": "View module types",
+    "permission_group_id": 2
+  },
+  {
+    "id": 7,
+    "name": "Update module types",
+    "slug": "moduletypes.edit",
+    "description": "Update module types",
+    "permission_group_id": 2
+  },
+  {
+    "id": 8,
+    "name": "Delete module types",
+    "slug": "moduletypes.destroy",
+    "description": "Delete module types",
+    "permission_group_id": 2
+  },
+  {
+    "id": 9,
+    "name": "Create modules",
+    "slug": "modules.create",
+    "description": "Create modules",
+    "permission_group_id": 3
+  },
+  {
+    "id": 10,
+    "name": "View modules",
+    "slug": "modules.index",
+    "description": "View modules",
+    "permission_group_id": 3
+  },
+  {
+    "id": 11,
+    "name": "Update modules",
+    "slug": "modules.edit",
+    "description": "Update modules",
+    "permission_group_id": 3
+  },
+  {
+    "id": 12,
+    "name": "Delete modules",
+    "slug": "modules.destroy",
+    "description": "Delete modules",
+    "permission_group_id": 3
+  },
+  {
+    "id": 13,
+    "name": "Create categories",
+    "slug": "categories.create",
+    "description": "Create categories",
+    "permission_group_id": 4
+  },
+  {
+    "id": 14,
+    "name": "View categories",
+    "slug": "categories.index",
+    "description": "View categories",
+    "permission_group_id": 4
+  },
+  {
+    "id": 15,
+    "name": "Update categories",
+    "slug": "categories.edit",
+    "description": "Update categories",
+    "permission_group_id": 4
+  },
+  {
+    "id": 16,
+    "name": "Delete categories",
+    "slug": "categories.destroy",
+    "description": "Delete categories",
+    "permission_group_id": 4
+  },
+  {
+    "id": 17,
+    "name": "Create products",
+    "slug": "products.create",
+    "description": "Create products",
+    "permission_group_id": 5
+  },
+  {
+    "id": 18,
+    "name": "View products",
+    "slug": "products.index",
+    "description": "View products",
+    "permission_group_id": 5
+  },
+  {
+    "id": 19,
+    "name": "Update products",
+    "slug": "products.edit",
+    "description": "Update products",
+    "permission_group_id": 5
+  },
+  {
+    "id": 20,
+    "name": "Delete products",
+    "slug": "products.destroy",
+    "description": "Delete products",
+    "permission_group_id": 5
+  }
+]
