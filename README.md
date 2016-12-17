@@ -4,10 +4,8 @@ Laravel Usermanagement package is smart and flexible way to boost your app devel
 
 ## Overview
 
- * Load default migrations and create tables and inital data
- * Laravel default auth system
- * Full user management (Crud)
- * User permission and roles
+ * Uses Laravel default auth system and Bical Roles and Permissions package
+ * Full user management with roles and permissions (Crud)
 
 ## Insallation
 
@@ -15,5 +13,5 @@ We recommend instalation of package first on fresh laravel 5.2 app.
 
  1. composer require softwaretours/users
  2. Register providers in your config/app.php
-    SoftwareTours\Lum\Providers\LumProvider::class,
+    SoftwareTours\Users\Providers\UsersProvider::class,
  3. php artisan vendor:publish --force
