@@ -6,6 +6,8 @@
 |--------------------------------------------------------------------------
 */
 
+Route::auth();
+
 Route::group(['middleware' => 'auth'], function () {
 
     /*
@@ -13,15 +15,15 @@ Route::group(['middleware' => 'auth'], function () {
     | Dashboard
     |--------------------------------------------------------------------------
     */
-    
+
     Route::get('/', ['as' => 'dashboard', 'uses' => 'Dashboard\DashboardController@index']);
 
 
     /*
-   |--------------------------------------------------------------------------
-   | Users crud
-   |--------------------------------------------------------------------------
-   */
+    |--------------------------------------------------------------------------
+    | Users crud
+    |--------------------------------------------------------------------------
+    */
     Route::get('users/index', ['as' => 'users.index', 'uses' => 'Users\UserController@index']);
     Route::get('users/create', ['as' => 'users.create', 'uses' => 'Users\UserController@create']);
     Route::post('users/store', ['as' => 'users.store', 'uses' => 'Users\UserController@store']);
@@ -30,11 +32,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('users/{param}/edit', ['as' => 'users.edit', 'uses' => 'Users\UserController@edit']);
 
     /*
-  |--------------------------------------------------------------------------
-  | Permissions crud
-  |--------------------------------------------------------------------------
-  */
-    
+    |--------------------------------------------------------------------------
+    | Permissions crud
+    |--------------------------------------------------------------------------
+    */
+
     Route::get('users/{param}/permissions', ['as' => 'users.permissions', 'uses' => 'Users\PermissionController@index']);
     Route::put('users/permissions/update', ['as' => 'users.permissions.update', 'uses' => 'Users\PermissionController@update']);
     Route::get('users/{param}/login-as', ['as' => 'users.login_as', 'uses' => 'Users\PermissionController@loginAs']);
