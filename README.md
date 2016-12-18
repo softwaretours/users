@@ -76,4 +76,4 @@ Enjoy!
 
 ### TODO
 
-Create composer `post-update-cmd` which updates and publish entire package all except layout, nav, footer and dashboard views (https://getcomposer.org/doc/articles/scripts.md).
+Create composer `post-update-cmd` which updates and publish entire package all except views: layout, nav, footer and dashboard. (https://getcomposer.org/doc/articles/scripts.md).
