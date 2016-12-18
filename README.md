@@ -1,17 +1,17 @@
 # Laravel User Management
 
-Laravel Usermanagement package is smart and flexible way to boost your app development cycle.
+Laravel User Management package is smart and flexible way to boost your app development cycle.
 
 ## Overview
 
-Simple app which enables user, roles and permisions management for your application. Software Tours Laravel User Management do two things:
+Simple app which enables user, roles and permissions management for your application. Software Tours Laravel User Management do two things:
 
-1. standardize views for laravel default auth (enables reusage of same code registration from 3 differnet places)
-2. removes foreing key restrictions for roles and permissions tables
+1. standardize views for laravel default auth (enabled reuse of same code registration from 3 different places)
+2. remove foreign key restrictions for roles and permissions tables
 
 ## Insallation
 
-We recommend instalation of package first on fresh laravel 5.2 app.
+We recommend installation of package first on fresh laravel 5.2 app.
 
 - composer require softwaretours/users
 - Add service provider in config/app.php
@@ -33,12 +33,12 @@ We recommend instalation of package first on fresh laravel 5.2 app.
 - php artisan vendor:publish —force
 - Create new database and set credentials in .env file
 - php artisan migrate --seed
-- Set writable permision to `public/user` folder
+- Set writable permission to `public/user` folder
 
 NOTE: When you run php artisan vendor:publish it do following commands:
 
 - Overrides /app/http/routes.php
-- Database migrations (removes foreing key restrictions for bican package)
+- Database migrations (remove foreign key restrictions for bican package)
 - Models
 - Repositories
 - Controles
@@ -49,7 +49,7 @@ NOTE: When you run php artisan vendor:publish it do following commands:
 
 ## Dependencies
 
-When instaling package, dependencies is automaticly instaled.
+Dependencies is automatically required and installed by composer.json.
 
 1. Laravel default auth
 https://laravel.com/docs/5.2/authentication
