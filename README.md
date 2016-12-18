@@ -18,7 +18,6 @@ We recommend instalation of package first on fresh laravel 5.2 app.
 
 `Bican\Roles\RolesServiceProvider::class,`
 
-
 `Collective\Html\HtmlServiceProvider::class,`
 
 `SoftwareTours\Users\Providers\UsersProvider::class,`
@@ -26,8 +25,9 @@ We recommend instalation of package first on fresh laravel 5.2 app.
 `App\Repositories\Users\BackendServiceProvider::class,` 
 
 3. Add aliases in config/app.php
-'Form' => Collective\Html\FormFacade::class,
-'Html' => Collective\Html\HtmlFacade::class
+`'Form' => Collective\Html\FormFacade::class,`
+
+`'Html' => Collective\Html\HtmlFacade::class`
 4. php artisan vendor:publish —force
 5. Create new database and set credentials in .env file
 6. php artisan migrate --seed
