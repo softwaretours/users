@@ -35,33 +35,50 @@ class UsersProvider extends ServiceProvider
          *  Publish Roles and Permission package
          */
 
-        //        $this->publishes([
-        //            __DIR__ . '/../Vendor' => base_path('vendor'),
-        //        ], 'repositories');
+        $this->publishes([
+            __DIR__ . '/../Vendor' => base_path('vendor'),
+        ], 'repositories');
 
         /**
          *  Publish Models
          */
 
-        //        $this->publishes([
-        //            __DIR__ . '/../Models' => base_path('app/Models'),
-        //        ], 'models');
+        $this->publishes([
+            __DIR__ . '/../Models' => base_path('app/Models'),
+        ], 'models');
 
         /**
          *  Publish Repositories
          */
 
-        //        $this->publishes([
-        //            __DIR__ . '/../Repositories' => base_path('app/Repositories'),
-        //        ], 'repositories');
+        $this->publishes([
+            __DIR__ . '/../Repositories' => base_path('app/Repositories'),
+        ], 'repositories');
 
+        /**
+         *  Publish Controllers
+         */
 
-        //        $this->publishes([
-        //            __DIR__ . '/../Http/Controllers' => base_path('app/Http/Controllers'),
-        //            __DIR__ . '/../Repositories' => base_path('app/Repositories'),
-        //            __DIR__ . '/../Resources/views' => base_path('resources/views'),
-        //            __DIR__ . '/../Assets' => public_path('assets'),
-        //        ], 'migrations');
+        $this->publishes([
+            __DIR__ . '/../Http/Controllers' => base_path('app/Http/Controllers'),
+        ], 'controllers');
+
+        /**
+         *  Publish Views
+         */
+
+        $this->publishes([
+            __DIR__ . '/../Resources/views' => base_path('resources/views'),
+        ], 'views');
+
+        /**
+         *  Publish Assets
+         */
+
+        $this->publishes([
+            __DIR__ . '/../Assets' => public_path('assets')
+        ], 'assets');
+
     }
 
     /**
