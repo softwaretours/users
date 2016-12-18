@@ -68,7 +68,8 @@ https://laravelcollective.com/docs/5.2/html
 
 ## User credentials
 
-Username: app@software.tours
-Password: app
+Username: `app@software.tours`
+
+Password: `app`
 
 Enjoy!
