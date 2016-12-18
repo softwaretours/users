@@ -26,7 +26,7 @@ App\Repositories\Users\BackendServiceProvider::class,
 5. Create new database and set credentials in .env file
 6. php artisan migrate --seed
 
-NOTE: When you run php artisan vendor:publish it overrides app/http/routes.php file and copies:
+NOTE: When you run php artisan vendor:publish it do following commands:
 
 - Overrides /app/http/routes.php
 - Database migrations (removes foreing key restrictions for bican package)
@@ -38,4 +38,4 @@ NOTE: When you run php artisan vendor:publish it overrides app/http/routes.php f
 - Assets (css, img, and js files for html layout)
 - Event and Listener with provider
 
-Happy coding :)
+
