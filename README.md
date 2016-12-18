@@ -49,13 +49,12 @@ NOTE: When you run php artisan vendor:publish it do following commands:
 
 ## Dependencies
 
+Laravel User Management is build on top of Laravel default auth https://laravel.com/docs/5.2/authentication. It uses 2 package for adding User Management CRUD functionality.
+
 Dependencies is automatically required and installed by composer.json.
 
-1. Laravel default auth
-https://laravel.com/docs/5.2/authentication
-
-2. Bican permisions and roles package
+1. Bican permisions and roles package
 https://github.com/romanbican/roles
 
-3. Laravel Collective Forms & Html
+2. Laravel Collective Forms & Html
 https://laravelcollective.com/docs/5.2/html
