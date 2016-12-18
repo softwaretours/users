@@ -79,7 +79,7 @@ class UsersProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../Events' => base_path('app/Events'),
             __DIR__ . '/../Listeners' => base_path('app/Listeners'),
-            __DIR__ . '/../Providers/EventServiceProvider.php' => base_path('app/Providers'),
+            __DIR__ . '/../Providers/EventServiceProvider.php' => base_path('app/Providers/EventServiceProvider.php'),
         ], 'events');
 
         /**
