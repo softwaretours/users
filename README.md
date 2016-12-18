@@ -33,6 +33,7 @@ We recommend instalation of package first on fresh laravel 5.2 app.
 - php artisan vendor:publish —force
 - Create new database and set credentials in .env file
 - php artisan migrate --seed
+- Set writable permision to `public/user` folder
 
 NOTE: When you run php artisan vendor:publish it do following commands:
 
