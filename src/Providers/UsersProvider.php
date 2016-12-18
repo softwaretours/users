@@ -32,14 +32,6 @@ class UsersProvider extends ServiceProvider
         ], 'migrations');
 
         /**
-         *  Publish Roles and Permission package
-         */
-
-        $this->publishes([
-            __DIR__ . '/../Vendor' => base_path('vendor'),
-        ], 'repositories');
-
-        /**
          *  Publish Models
          */
 
@@ -56,11 +48,12 @@ class UsersProvider extends ServiceProvider
         ], 'repositories');
 
         /**
-         *  Publish Controllers
+         *  Publish Controllers and Routes
          */
 
         $this->publishes([
             __DIR__ . '/../Http/Controllers' => base_path('app/Http/Controllers'),
+            __DIR__ . '/../Http/routes.php' => base_path('app/Http/routes.php'),
         ], 'controllers');
 
         /**
@@ -76,7 +69,25 @@ class UsersProvider extends ServiceProvider
          */
 
         $this->publishes([
-            __DIR__ . '/../Assets' => public_path('assets')
+            __DIR__ . '/../Assets' => public_path('assets'),
+        ], 'assets');
+
+        /**
+         *  Publish Event and Listener with provider
+         */
+
+        $this->publishes([
+            __DIR__ . '/../Events' => base_path('app/Events'),
+            __DIR__ . '/../Listeners' => base_path('app/Listeners'),
+            __DIR__ . '/../Providers' => base_path('app/Providers'),
+        ], 'events');
+
+        /**
+         *  Publish routes.php
+         */
+
+        $this->publishes([
+            __DIR__ . '/../Assets' => public_path('assets'),
         ], 'assets');
 
     }
@@ -91,7 +102,7 @@ class UsersProvider extends ServiceProvider
         /**
          *  Add routes
          */
-        //        $this->_updateRoutes();
+//        $this->_updateRoutes();
 
         /**
          *  Publish files
