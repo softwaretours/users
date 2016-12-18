@@ -2,7 +2,9 @@
   "name": "softwaretours/users",
   "description": "Laravel User Management with Roles and Permisions.",
   "type": "library",
-  "require-dev": "bican/roles": "2.1.*",
+  "require-dev": {
+    "bican/roles": "2.1.*"
+  },
   "autoload": {
     "psr-4": {
       "SoftwareTours\\Users\\": "src/"
