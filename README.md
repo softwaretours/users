@@ -37,6 +37,8 @@ We recommend installation of package first on fresh laravel 5.2 app.
 - php artisan migrate --seed
 - Set writable permission to `public/user` folder
 
+We recommend setting `bootstrap` and `storage` folders permission.
+
 NOTE: When you run php artisan vendor:publish it do following commands:
 
 - Overrides /app/http/routes.php
