@@ -18,6 +18,7 @@ We recommend instalation of package first on fresh laravel 5.2 app.
 
 `Bican\Roles\RolesServiceProvider::class,`
 
+
 `Collective\Html\HtmlServiceProvider::class,`
 
 `SoftwareTours\Users\Providers\UsersProvider::class,`
