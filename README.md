@@ -15,10 +15,15 @@ We recommend instalation of package first on fresh laravel 5.2 app.
 
 1. composer require softwaretours/users
 2. Add service provider in config/app.php
+
 `Bican\Roles\RolesServiceProvider::class,`
+
 `Collective\Html\HtmlServiceProvider::class,`
+
 `SoftwareTours\Users\Providers\UsersProvider::class,`
-`App\Repositories\Users\BackendServiceProvider::class,`  
+
+`App\Repositories\Users\BackendServiceProvider::class,` 
+
 3. Add aliases in config/app.php
 'Form' => Collective\Html\FormFacade::class,
 'Html' => Collective\Html\HtmlFacade::class
