@@ -5,9 +5,6 @@
    "require": {
     "bican/roles": "2.1.*"
   },
-  "require-dev": {
-    "bican/roles": "2.1.*"
-  },
   "autoload": {
     "psr-4": {
       "SoftwareTours\\Users\\": "src/"
