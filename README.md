@@ -47,4 +47,15 @@ NOTE: When you run php artisan vendor:publish it do following commands:
 - Assets (css, img, and js files for html layout)
 - Event and Listener with provider
 
+## Dependencies
 
+When instaling package, dependencies is automaticly instaled.
+
+Laravel default auth
+https://laravel.com/docs/5.2/authentication
+
+Bican permisions and roles package
+https://github.com/romanbican/roles
+
+Laravel Collective Forms & Html
+https://laravelcollective.com/docs/5.2/html
