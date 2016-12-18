@@ -28,7 +28,7 @@ We recommend installation of package first on fresh laravel 5.2 app.
 
 `'Form' => Collective\Html\FormFacade::class,`
 
-`'Html' => Collective\Html\HtmlFacade::class`
+`'Html' => Collective\Html\HtmlFacade::class,`
 
 - php artisan vendor:publish —force
 - Create new database and set credentials in .env file
