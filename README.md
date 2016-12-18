@@ -51,11 +51,11 @@ NOTE: When you run php artisan vendor:publish it do following commands:
 
 When instaling package, dependencies is automaticly instaled.
 
-Laravel default auth
+1. Laravel default auth
 https://laravel.com/docs/5.2/authentication
 
-Bican permisions and roles package
+2. Bican permisions and roles package
 https://github.com/romanbican/roles
 
-Laravel Collective Forms & Html
+3. Laravel Collective Forms & Html
 https://laravelcollective.com/docs/5.2/html
