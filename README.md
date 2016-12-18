@@ -22,15 +22,17 @@ We recommend installation of package first on fresh laravel 5.2 app.
 
 `SoftwareTours\Users\Providers\UsersProvider::class,`
 
-`App\Repositories\Users\BackendServiceProvider::class,` 
-
 - Add aliases in config/app.php
 
 `'Form' => Collective\Html\FormFacade::class,`
 
 `'Html' => Collective\Html\HtmlFacade::class,`
 
-- php artisan vendor:publish —force
+- php artisan vendor:publish --force
+- Add service provider in config/app.php
+
+`App\Repositories\Users\BackendServiceProvider::class,` 
+
 - Create new database and set credentials in .env file
 - php artisan migrate --seed
 - Set writable permission to `public/user` folder
