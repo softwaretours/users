@@ -36,8 +36,10 @@ We recommend installation of package first on fresh laravel 5.2 app.
 - Create new database and set credentials in .env file
 - php artisan migrate --seed
 - Set writable permission to `public/user` folder
+
 ---
-We recommend setting `bootstrap` and `storage` folders permission.
+
+We recommend setting `bootstrap` and `storage` folders permission after installation.
 
 NOTE: When you run php artisan vendor:publish it do following commands:
 
