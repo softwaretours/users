@@ -51,7 +51,7 @@ NOTE: When you run php artisan vendor:publish it do following commands:
 - Models
 - Views
 - Assets (css, img, and js files for html layout)
-- Event and Listener with provider
+- Event, Listener and EventProvider
 
 ## Dependencies
 
