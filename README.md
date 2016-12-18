@@ -13,8 +13,8 @@ Simple app which enables user, roles and permisions management for your applicat
 
 We recommend instalation of package first on fresh laravel 5.2 app.
 
-1. composer require softwaretours/users
-2. Add service provider in config/app.php
+3. composer require softwaretours/users
+4. Add service provider in config/app.php
 
 `Bican\Roles\RolesServiceProvider::class,`
 
@@ -24,15 +24,15 @@ We recommend instalation of package first on fresh laravel 5.2 app.
 
 `App\Repositories\Users\BackendServiceProvider::class,` 
 
-3. Add aliases in config/app.php
+5. Add aliases in config/app.php
 
 `'Form' => Collective\Html\FormFacade::class,`
 
 `'Html' => Collective\Html\HtmlFacade::class`
 
-4. php artisan vendor:publish —force
-5. Create new database and set credentials in .env file
-6. php artisan migrate --seed
+6. php artisan vendor:publish —force
+7. Create new database and set credentials in .env file
+8. php artisan migrate --seed
 
 NOTE: When you run php artisan vendor:publish it do following commands:
 
