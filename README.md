@@ -65,3 +65,10 @@ https://github.com/romanbican/roles
 
 2. Laravel Collective Forms & Html
 https://laravelcollective.com/docs/5.2/html
+
+## User credentials
+
+Username: app@software.tours
+Password: app
+
+Enjoy!
