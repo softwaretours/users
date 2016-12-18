@@ -72,8 +72,6 @@ Username: `app@software.tours`
 
 Password: `app`
 
-Enjoy!
-
 ### TODO
 
 Create composer `post-update-cmd` which updates and publish entire package all except views: layout, nav, footer and dashboard. (https://getcomposer.org/doc/articles/scripts.md).
