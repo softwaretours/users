@@ -4,6 +4,7 @@ namespace App\Repositories\Users;
 
 use App\Events\UserWasCreated;
 use App\Models\Users\User;
+use Illuminate\Support\Facades\DB;
 
 class UserRepository implements UserInterface
 {
@@ -97,5 +98,59 @@ class UserRepository implements UserInterface
     public function getValidatorUpdateDataSystem()
     {
         return $this->validatorUpdateDataSystem;
+    }
+
+    private function datatableSearch(){
+        $total = DB::table('users')
+            ->where('users.nicename', 'like', '%'.$_GET['search']['value'].'%')
+            ->orderBy('id', 'ASC')->get();
+
+        $niz = DB::table('users')
+            ->leftJoin('role_user', 'users.id', '=', 'role_user.user_id')
+            ->leftJoin('roles', 'role_user.role_id', '=', 'roles.id')
+            ->select('users.*', 'roles.name as role_name')
+            ->where('users.nicename', 'like', '%'.$_GET['search']['value'].'%')
+            ->offset($_GET['start'])
+            ->limit($_GET['length'])
+            ->orderBy('id', 'ASC')->get();
+        echo json_encode(array(
+            "draw" => $_GET['draw'],
+            "recordsTotal" => count($total),
+            "recordsFiltered"=>count($total),
+            "data" => $niz
+        ));
+    }
+
+    /**
+     * @inheritdoc
+     */
+
+    public function datatable(){
+        //Ako je pretraga u pitanju
+        if(isset($_GET['search']['value']) && $_GET['search']['value'] != ''){
+
+            $this->datatableSearch();
+
+        }
+        // Ako nije pretraga
+        else {
+            $total = User::all();
+
+            $niz = DB::table('users')
+//            ->leftJoin('role_user', 'users.id', '=', 'role_user.user_id')
+//            ->leftJoin('roles', 'role_user.role_id', '=', 'roles.id')
+//            ->select('users.*', 'roles.name as role_name')
+                ->select('users.*')
+                ->offset($_GET['start'])
+                ->limit($_GET['length'])
+                ->orderBy('id', 'ASC')->get();
+
+            echo json_encode(array(
+                "draw" => $_GET['draw'],
+                "recordsTotal" => count($total),
+                "recordsFiltered"=>count($total),
+                "data" => $niz
+            ));      // echo results
+        }
     }
 }

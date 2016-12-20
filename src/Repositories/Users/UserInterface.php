@@ -51,5 +51,11 @@ interface UserInterface
      */
     public function getValidatorUpdateDataSystem();
 
+    /**
+     * Initialize datatable with users
+     * @return mixed
+     */
+    public function datatable();
+
 
 }
