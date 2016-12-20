@@ -53,6 +53,7 @@ class UsersProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/../Http/Controllers' => base_path('app/Http/Controllers'),
+            __DIR__ . '/../Http/Requests' => base_path('app/Http/Requests'),
             __DIR__ . '/../Http/routes.php' => base_path('app/Http/routes.php'),
         ], 'controllers');
 
