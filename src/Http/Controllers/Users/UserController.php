@@ -11,15 +11,9 @@ use Modules\Core\Http\Requests\CreateUserRequest;
 use Modules\Core\Http\Requests\UpdateUserRequest;
 
 use App\Models\Users\User;
-use Modules\Core\Repositories\Users\UserInterface2;
-
 class UserController extends Controller
 {
 
-    /**
-     * @var UserInterface2 $repositoryObj
-     */
-    protected $repositoryObj;
 
     /**
      *  User Repository Interface
@@ -32,9 +26,8 @@ class UserController extends Controller
      * @param UserInterface2 $obj
      * @param UserInterface $userInterface
      */
-    public function __construct(UserInterface2 $obj, UserInterface $userInterface)
+    public function __construct(UserInterface $userInterface)
     {
-        $this->repositoryObj = $obj;
         $this->userInterface = $userInterface;
     }
 
@@ -70,7 +63,7 @@ class UserController extends Controller
      */
     public function datatable()
     {
-        $this->repositoryObj->datatable();
+        $this->userInterface->datatable();
     }
 
 
