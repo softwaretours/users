@@ -31,7 +31,9 @@ We recommend installation of package first on fresh laravel 5.2 app.
 - php artisan vendor:publish --force
 - Add service provider in config/app.php
 
-`App\Repositories\Users\BackendServiceProvider::class,` 
+`App\Repositories\Users\BackendServiceProvider::class,`
+
+`App\Repositories\Users\Permissions\BackendServiceProvider::class,`
 
 - composer dump-autoload
 - Create new database and set credentials in .env file
