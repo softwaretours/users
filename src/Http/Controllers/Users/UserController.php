@@ -7,8 +7,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use App\Repositories\Users\UserInterface;
-use Modules\Core\Http\Requests\CreateUserRequest;
-use Modules\Core\Http\Requests\UpdateUserRequest;
+use App\Http\Requests\CreateUserRequest;
+use App\Http\Requests\UpdateUserRequest;
 
 use App\Models\Users\User;
 class UserController extends Controller
