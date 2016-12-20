@@ -108,6 +108,9 @@ class UsersProvider extends ServiceProvider
         /**
          * Settings
          */
+
+        require_once __DIR__ . '/../Class/PageFormat.php';
+
         view()->composer('*', function ($view) {
 
             /**
