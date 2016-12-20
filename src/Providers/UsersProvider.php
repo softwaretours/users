@@ -100,31 +100,28 @@ class UsersProvider extends ServiceProvider
     public function boot()
     {
         /**
-         *  Add routes
-         */
-//        $this->_updateRoutes();
-
-        /**
          *  Publish files
          */
 
         $this->_publish();
 
         /**
-         *  Include routes and register migrations and views
-         */
-        //        include __DIR__ . '/../Http/routes.php';
-        //        $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'lum');
-
-        /**
          * Settings
          */
-        //        view()->composer('view', function () {
-        //
-        //            $user = array();
-        //            $view->with(compact('user'));
-        //
-        //        });
+        view()->composer('*', function ($view) {
+
+            /**
+             *  Get controller name and action
+             */
+            $action = app('request')->route()->getAction();
+            $controller = class_basename($action['controller']);
+            list($controller, $action) = explode('@', $controller);
+            $user = \Auth::user();
+
+            $view->with(compact('controller', 'action', 'user'));
+
+
+        });
 
 
     }
