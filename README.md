@@ -76,4 +76,9 @@ Password: `app`
 
 ### TODO
 
-Create composer `post-update-cmd` which updates and publish entire package all except views: layout, nav, footer and dashboard. (https://getcomposer.org/doc/articles/scripts.md).
+1. Clean HTML and CSS files with customized bootstrap
+2. Work on permission crud, do it more proffesional
+3. Do user with permissions on crud and datatable
+4. Create composer `post-update-cmd` which updates and publish entire package all except views: layout, nav, footer and dashboard. (https://getcomposer.org/doc/articles/scripts.md).
+
+
