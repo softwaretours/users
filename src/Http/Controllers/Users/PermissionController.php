@@ -40,11 +40,14 @@ class PermissionController extends Controller
     {
         $data = $this->permissionInterface->index(['user_id' => $user_id]);
 
+        $user = User::find($user_id);
+        $page_format = new \PageFormat(['title' => 'User permissions', 'h1' => $user->name.' '.$user->last_name.' Permissions']);
+
         return view('auth.users.permissions.index', [
             'permission_user' => $data->user,
             'permission_groups' => $data->permission_groups,
             'permissions' => $data->permissions,
-            'titles' => $data->titles
+            'titles' => $page_format->makeTitle()
         ]);
     }
 

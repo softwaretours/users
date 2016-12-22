@@ -21,15 +21,13 @@ class PermissionRepository implements PermissionInterface
         $user = User::find($params['user_id']);
         //Get permission groups
         $permission_groups = PermissionGroup::get();
-
         $permissions = Permission::get();
 
-        $page_format = new \PageFormat(['title' => 'User permissions', 'h1' => $user->name.' '.$user->last_name.' Permissions']);
         $data = new \stdClass();
         $data->user = $user;
         $data->permission_groups = $permission_groups;
         $data->permissions = $permissions;
-        $data->titles = $page_format->makeTitle();
+
         return $data;
     }
 
