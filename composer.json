@@ -1,8 +1,10 @@
 {
   "name": "softwaretours/users",
-  "description": "Laravel User Management with Roles and Permisions.",
-  "type": "library",
+  "description": "Smart and flexible way to boost your app development start",
+  "keywords": ["softwaretours", "roles", "permissions", "crud", "auth", "laravel", "illuminate"],
+  "license": "MIT",
    "require": {
+    "php": ">=5.5.9",
     "bican/roles": "2.1.*",
     "laravelcollective/html": "^5.2.0"
   },
