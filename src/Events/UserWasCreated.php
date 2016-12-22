@@ -14,7 +14,7 @@ class UserWasCreated extends Event
     /**
      *  User Repository Interface
      */
-    protected $userInterface;
+    public $userInterface;
 
     public $userRow;
 

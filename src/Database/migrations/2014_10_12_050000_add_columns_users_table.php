@@ -20,6 +20,7 @@ class AddColumnsUsersTable extends Migration
             $table->integer('status')->after('account_source');
             $table->integer('account_id')->default(0)->after('status');
             $table->integer('parent_id')->default(0)->after('account_id');
+            $table->string('role_slug')->default("client")->after('parent_id');
         });
     }
 

@@ -3,31 +3,21 @@
     "id": 1,
     "name": "Users",
     "key": "USERS",
+    "type": "DB",
     "description": "Manage Users"
   },
   {
     "id": 2,
     "name": "Module types",
     "key": "MODULETYPES",
+    "type": "APP",
     "description": "Manage Module Types"
   },
   {
     "id": 3,
     "name": "Modules",
     "key": "MODULES",
+    "type": "APP",
     "description": "Manage Modules"
-  },
-  {
-    "id": 4,
-    "name": "Categories",
-    "key": "CATEGORIES",
-    "description": "Manage Categories"
-  },
-  {
-    "id": 5,
-    "name": "Products",
-    "key": "PRODUCTS",
-    "description": "Manage Products"
   }
-
 ]
