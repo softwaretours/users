@@ -17,6 +17,15 @@
     <script src="{{URL::asset('assets/js/libs/angular.min.js')}}"></script>
 
     @yield('head')
+
+    <style>
+        .secondary-text {
+            color: #505050;
+            font-weight: normal;
+            font-size: 12px;
+        }
+    </style>
+
 </head>
 <body class="">
 @include('nav')

@@ -35,6 +35,8 @@ We recommend installation of package first on fresh laravel 5.2 app.
 
 `App\Repositories\Users\Permissions\BackendServiceProvider::class,`
 
+`App\Repositories\Users\Roles\BackendServiceProvider::class,`
+
 - Change default User model in `config/auth.php` to `'model' => App\Models\Users\User::class,`
 - composer dump-autoload
 - Create new database and set credentials in .env file

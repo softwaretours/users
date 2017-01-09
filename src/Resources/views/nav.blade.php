@@ -36,6 +36,7 @@
                     <ul class="dropdown-menu" id="nav_reload">
                         <li class="dropdown-header">SYSTEM</li>
                         <li><a href="{{ route('users.index') }}">User management</a></li>
+                        <li><a href="{{ route('roles.index') }}">Roles and permissions</a></li>
                     </ul>
                 </li>
 
