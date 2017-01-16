@@ -73,9 +73,9 @@ https://laravelcollective.com/docs/5.2/html
 
 ## Credentials
 
-Username: `app@software.tours`
+Username: `info@cueagents.com`
 
-Password: `app`
+Password: `info`
 
 ### TODO
 
