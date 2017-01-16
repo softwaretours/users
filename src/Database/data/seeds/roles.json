@@ -1,23 +1,51 @@
 [
   {
     "id": 1,
-    "name": "Software Tours Users",
+    "name": "Application Owner",
     "slug": "app",
-    "description": "Software tours sve privilegije",
+    "description": "Application owner has all privileges",
     "level": 100
   },
   {
     "id": 2,
-    "name": "Super administrator Users",
-    "slug": "super.admin",
-    "description": "Super administrator sve privilegije osim finansiskih izvještaja",
+    "name": "Interior designer",
+    "slug": "interior-designer",
+    "description": "Interior designer privileges",
     "level": 90
   },
   {
     "id": 3,
-    "name": "Klijent Users",
-    "slug": "client",
-    "description": "Turistička agencija | Hotel | Cms | E-commerce",
+    "name": "Architects",
+    "slug": "architects",
+    "description": "Architects privileges",
+    "level": 80
+  },
+  {
+    "id": 4,
+    "name": "Supplier",
+    "slug": "supplier",
+    "description": "Supplier privileges",
     "level": 70
+  },
+  {
+    "id": 5,
+    "name": "Commercial clients",
+    "slug": "commercial-client",
+    "description": "Commercial clients privileges",
+    "level": 60
+  },
+  {
+    "id": 6,
+    "name": "Residential clients",
+    "slug": "residential-client",
+    "description": "Residential clients privileges",
+    "level": 50
+  },
+  {
+    "id": 7,
+    "name": "Tender clients",
+    "slug": "tender-client",
+    "description": "Tender clients privileges",
+    "level": 50
   }
 ]

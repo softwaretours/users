@@ -1,23 +1,68 @@
 [
   {
     "id": 1,
-    "name": "Users",
-    "key": "USERS",
-    "type": "DB",
-    "description": "Manage Users"
+    "name": "Application access",
+    "key": "APPLICATION",
+    "description": "Application access"
   },
   {
     "id": 2,
-    "name": "Module types",
-    "key": "MODULETYPES",
-    "type": "APP",
-    "description": "Manage Module Types"
+    "name": "Profile",
+    "key": "PROFILE",
+    "description": "Profile operations"
   },
   {
     "id": 3,
-    "name": "Modules",
-    "key": "MODULES",
-    "type": "APP",
-    "description": "Manage Modules"
+    "name": "Users",
+    "key": "USERS",
+    "description": "Manage operations with users"
+  },
+  {
+    "id": 4,
+    "name": "Mood boards",
+    "key": "MOODBOARDS",
+    "description": "Manage operations with Mood boards"
+  },
+  {
+    "id": 5,
+    "name": "Products",
+    "key": "PRODUCTS",
+    "description": "Manage operations with Products"
+  },
+  {
+    "id": 6,
+    "name": "Images",
+    "key": "IMAGES",
+    "description": "Manage operations with Images"
+  },
+  {
+    "id": 7,
+    "name": "Requests",
+    "key": "REQUESTS",
+    "description": "Manage operations with Requests"
+  },
+  {
+    "id": 8,
+    "name": "Invites",
+    "key": "INVITES",
+    "description": "Manage operations with Invites"
+  },
+  {
+    "id": 9,
+    "name": "Tenders",
+    "key": "TENDERS",
+    "description": "Manage operations with Tenders"
+  },
+  {
+    "id": 10,
+    "name": "Roles",
+    "key": "ROLES",
+    "description": "Manage operations with Roles"
+  },
+  {
+    "id": 11,
+    "name": "Permissions",
+    "key": "PERMISSIONS",
+    "description": "Manage operations with Permissions"
   }
 ]

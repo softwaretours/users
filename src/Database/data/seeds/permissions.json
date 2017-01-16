@@ -1,72 +1,373 @@
 [
   {
     "id": 1,
-    "name": "Create users",
-    "slug": "users.create",
-    "description": "Create users",
+    "name": "Access application",
+    "slug": "login",
+    "description": "Access application",
     "permission_group_id": 1
   },
   {
     "id": 2,
-    "name": "View users",
-    "slug": "users.index",
-    "description": "View users",
-    "permission_group_id": 1
+    "name": "Register business",
+    "slug": "profile.create",
+    "description": "Register business",
+    "permission_group_id": 2
   },
   {
     "id": 3,
-    "name": "Update users",
-    "slug": "users.edit",
-    "description": "Update users",
-    "permission_group_id": 1
+    "name": "Edit profile",
+    "slug": "profile.update",
+    "description": "Edit profile",
+    "permission_group_id": 2
   },
   {
     "id": 4,
-    "name": "Delete users",
-    "slug": "users.destroy",
-    "description": "Delete users",
-    "permission_group_id": 1
+    "name": "Delete profile",
+    "slug": "profile.delete",
+    "description": "Delete profile",
+    "permission_group_id": 2
   },
   {
     "id": 5,
-    "name": "Create module types",
-    "slug": "moduletypes.create",
-    "description": "Create module types",
+    "name": "Publish profile",
+    "slug": "profile.publish",
+    "description": "Make profile public",
     "permission_group_id": 2
   },
   {
     "id": 6,
-    "name": "View module types",
-    "slug": "moduletypes.index",
-    "description": "View module types",
-    "permission_group_id": 2
+    "name": "Create own users",
+    "slug": "users.create",
+    "description": "Create own users",
+    "permission_group_id": 3
   },
   {
     "id": 7,
-    "name": "Update module types",
-    "slug": "moduletypes.edit",
-    "description": "Update module types",
-    "permission_group_id": 2
+    "name": "View own users",
+    "slug": "users.index",
+    "description": "View own users",
+    "permission_group_id": 3
   },
   {
     "id": 8,
-    "name": "Delete module types",
-    "slug": "moduletypes.destroy",
-    "description": "Delete module types",
-    "permission_group_id": 2
+    "name": "Edit users",
+    "slug": "users.update",
+    "description": "Edit users",
+    "permission_group_id": 3
   },
   {
     "id": 9,
-    "name": "Create modules",
-    "slug": "modules.create",
-    "description": "Create modules",
+    "name": "Delete users",
+    "slug": "users.destroy",
+    "description": "Delete users",
     "permission_group_id": 3
   },
   {
     "id": 10,
-    "name": "View modules",
-    "slug": "modules.index",
-    "description": "View modules",
+    "name": "Login as user",
+    "slug": "users.login.as",
+    "description": "Login as user",
     "permission_group_id": 3
+  },
+  {
+    "id": 11,
+    "name": "Create moodboard",
+    "slug": "moodboard.create",
+    "description": "Create own moodboard",
+    "permission_group_id": 4
+  },
+  {
+    "id": 12,
+    "name": "View own moodboard",
+    "slug": "moodboard.index",
+    "description": "View own moodboard",
+    "permission_group_id": 4
+  },
+  {
+    "id": 13,
+    "name": "Edit own moodboard",
+    "slug": "moodboard.update",
+    "description": "Edit own moodboard",
+    "permission_group_id": 4
+  },
+  {
+    "id": 14,
+    "name": "Delete own moodboard",
+    "slug": "moodboard.destroy",
+    "description": "Delete own moodboard",
+    "permission_group_id": 4
+  },
+  {
+    "id": 15,
+    "name": "Publish own moodboard",
+    "slug": "moodboard.publish",
+    "description": "Publish own moodboard",
+    "permission_group_id": 4
+  },
+  {
+    "id": 16,
+    "name": "Create products",
+    "slug": "products.create",
+    "description": "Create own products",
+    "permission_group_id": 5
+  },
+  {
+    "id": 17,
+    "name": "View own products",
+    "slug": "products.index",
+    "description": "View own products",
+    "permission_group_id": 5
+  },
+  {
+    "id": 18,
+    "name": "Edit own products",
+    "slug": "products.update",
+    "description": "Edit own products",
+    "permission_group_id": 5
+  },
+  {
+    "id": 19,
+    "name": "Delete own products",
+    "slug": "products.destroy",
+    "description": "Delete own products",
+    "permission_group_id": 5
+  },
+  {
+    "id": 20,
+    "name": "Publish own products",
+    "slug": "products.publish",
+    "description": "Publish own products",
+    "permission_group_id": 5
+  },
+  {
+    "id": 21,
+    "name": "View product price",
+    "slug": "products.price",
+    "description": "View product price",
+    "permission_group_id": 5
+  },
+  {
+    "id": 22,
+    "name": "Contact supplier",
+    "slug": "supplier.contact",
+    "description": "Contact supplier",
+    "permission_group_id": 5
+  },
+  {
+    "id": 23,
+    "name": "Upload own images",
+    "slug": "images.create",
+    "description": "Upload own images",
+    "permission_group_id": 6
+  },
+  {
+    "id": 24,
+    "name": "Publish own images",
+    "slug": "images.publish",
+    "description": "Publish own images",
+    "permission_group_id": 6
+  },
+  {
+    "id": 25,
+    "name": "Access Public images",
+    "slug": "images.public",
+    "description": "Access Public images",
+    "permission_group_id": 6
+  },
+  {
+    "id": 26,
+    "name": "Access Google images",
+    "slug": "images.google",
+    "description": "Access Google images",
+    "permission_group_id": 6
+  },
+  {
+    "id": 27,
+    "name": "Access Shutterstock images",
+    "slug": "images.shutterstock",
+    "description": "Access Shutterstock images",
+    "permission_group_id": 6
+  },
+  {
+    "id": 28,
+    "name": "Create requests",
+    "slug": "requests.create",
+    "description": "Create requests",
+    "permission_group_id": 7
+  },
+  {
+    "id": 29,
+    "name": "View requests",
+    "slug": "requests.index",
+    "description": "View requests",
+    "permission_group_id": 7
+  },
+  {
+    "id": 30,
+    "name": "Edit requests",
+    "slug": "requests.update",
+    "description": "Edit requests",
+    "permission_group_id": 7
+  },
+  {
+    "id": 31,
+    "name": "Delete requests",
+    "slug": "requests.destroy",
+    "description": "Delete requests",
+    "permission_group_id": 7
+  },
+  {
+    "id": 32,
+    "name": "Change own request status",
+    "slug": "request.status",
+    "description": "Change own request status",
+    "permission_group_id": 7
+  },
+  {
+    "id": 33,
+    "name": "Respond to request",
+    "slug": "request.respond",
+    "description": "Respond to request",
+    "permission_group_id": 7
+  },
+  {
+    "id": 34,
+    "name": "Create invites",
+    "slug": "invites.create",
+    "description": "Create invites",
+    "permission_group_id": 8
+  },
+  {
+    "id": 35,
+    "name": "View invites",
+    "slug": "invites.index",
+    "description": "View invites",
+    "permission_group_id": 8
+  },
+  {
+    "id": 36,
+    "name": "Edit invites",
+    "slug": "invites.update",
+    "description": "Edit invites",
+    "permission_group_id": 8
+  },
+  {
+    "id": 37,
+    "name": "Delete invites",
+    "slug": "invites.destroy",
+    "description": "Delete invites",
+    "permission_group_id": 8
+  },
+  {
+    "id": 38,
+    "name": "Respond to invites",
+    "slug": "invites.respond",
+    "description": "Respond to invites",
+    "permission_group_id": 8
+  },
+  {
+    "id": 39,
+    "name": "Change own invites status",
+    "slug": "invites.status",
+    "description": "Change own invites status",
+    "permission_group_id": 8
+  },
+  {
+    "id": 40,
+    "name": "Create tender",
+    "slug": "tender.create",
+    "description": "Create tender",
+    "permission_group_id": 9
+  },
+  {
+    "id": 41,
+    "name": "View tender",
+    "slug": "tender.index",
+    "description": "View tender",
+    "permission_group_id": 9
+  },
+  {
+    "id": 42,
+    "name": "Edit tender",
+    "slug": "tender.update",
+    "description": "Edit tender",
+    "permission_group_id": 9
+  },
+  {
+    "id": 43,
+    "name": "Delete tender",
+    "slug": "tender.destroy",
+    "description": "Delete tender",
+    "permission_group_id": 9
+  },
+  {
+    "id": 44,
+    "name": "Respond to tender",
+    "slug": "tender.respond",
+    "description": "Respond to tender",
+    "permission_group_id": 9
+  },
+  {
+    "id": 45,
+    "name": "Change own tender status",
+    "slug": "tender.status",
+    "description": "Change own tender status",
+    "permission_group_id": 9
+  },
+  {
+    "id": 46,
+    "name": "Create roles",
+    "slug": "roles.create",
+    "description": "Create roles",
+    "permission_group_id": 10
+  },
+  {
+    "id": 47,
+    "name": "View roles",
+    "slug": "roles.index",
+    "description": "View roles",
+    "permission_group_id": 10
+  },
+  {
+    "id": 48,
+    "name": "Edit roles",
+    "slug": "roles.update",
+    "description": "Edit roles",
+    "permission_group_id": 10
+  },
+  {
+    "id": 49,
+    "name": "Delete roles",
+    "slug": "roles.destroy",
+    "description": "Delete roles",
+    "permission_group_id": 10
+  },
+  {
+    "id": 50,
+    "name": "Create permissions",
+    "slug": "permissions.create",
+    "description": "Create permissions",
+    "permission_group_id": 11
+  },
+  {
+    "id": 51,
+    "name": "View permissions",
+    "slug": "permissions.index",
+    "description": "View permissions",
+    "permission_group_id": 11
+  },
+  {
+    "id": 52,
+    "name": "Edit permissions",
+    "slug": "permissions.update",
+    "description": "Edit permissions",
+    "permission_group_id": 11
+  },
+  {
+    "id": 53,
+    "name": "Delete permissions",
+    "slug": "permissions.destroy",
+    "description": "Delete permissions",
+    "permission_group_id": 11
   }
 ]

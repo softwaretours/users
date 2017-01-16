@@ -12,16 +12,22 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+    	/**
+    	 *  Populate Permission Groups and Permissions
+    	 */
         $this->call(PermissionGroupsTableSeeder::class);
         $this->call(PermissionsTableSeeder::class);
 
+        /**
+         *  Populate Roles and attach permission to roles
+         */
         $this->call(RolesTableSeeder::class);
         $this->call(PermissionsRoleTableSeeder::class);
 
+        /**
+         *  Populate users
+         */
         $this->call(UsersTableSeeder::class);
-
-        //        $this->call(RoleUserTableSeeder::class);
-        //        $this->call(PermissionsUserTableSeeder::class);
 
     }
 }

@@ -1,32 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Software Tours",
+    "name": "Cue Design Agents",
     "last_name": "",
-    "email": "app@software.tours",
-    "password_text": "app",
+    "email": "info@cueagents.com",
+    "password_text": "info",
     "status": 1,
     "parent_id": 0,
     "role_slug": "app"
-  },
-  {
-    "id": 2,
-    "name": "Super administrator",
-    "last_name": "",
-    "email": "admin@software.tours",
-    "password_text": "admin",
-    "status": 1,
-    "parent_id": 1,
-    "role_slug": "super.admin"
-  },
-  {
-    "id": 3,
-    "name": "Client",
-    "last_name": "",
-    "email": "client@software.tours",
-    "password_text": "client",
-    "status": 1,
-    "parent_id": 1,
-    "role_slug": "client"
   }
 ]
