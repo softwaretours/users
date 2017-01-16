@@ -3,12 +3,9 @@
 namespace SoftwareTours\Users\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Traits\MyTrait;
 
 class UsersProvider extends ServiceProvider
 {
-
-    use MyTrait;
 
     private function _updateRoutes()
     {
